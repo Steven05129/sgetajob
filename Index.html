@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="estilos.css">
+<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+</style>
+
+
+</head>
+<header>
+	<div class="header wrapper">
+		<a href="index.html">sGet a Job</a>
+  	<a href="empleos.html">Empleos</a>
+    <a href="empresas.html">Empresas</a>
+	<div class ="header-right">
+		<a  href="iniciarsesion.html">Iniciar sesión</a>
+  	<a href="registrarse.html">Registrarse</a>
+	</div>
+</div>
+</header>
+
+<div class="wrapper">
+    <br>
+    <br>
+    <br>
+		<p style="background-color:white">
+			<img src="Imagen/Imagen.jpg"> Encuentra trabajo
+		</p>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <p>Navigation bar with a search box and a submit button inside of it. jnnjsdkcnds dsj kjds jkd sj djk djk jd e ddfh djfj fre jk r cr c rej j j rej g vn vnvn nv efnvjfnj vnfjnvijenv inevi nefoi vne iofnvinvjnrv v n jnvj nvjernvojer  vnrej vjernvojner oerj vojernv eirvunhifjsaojfjfiojtrs amor vjnjvs asncmucbahpn cyt rv cn vev</p>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+<div class="footer">
+  <p>Footer</p>
+</body>
+</html>
